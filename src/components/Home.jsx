@@ -1,15 +1,107 @@
-import React from 'react';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import TypingText from "./TypingText"; // Import the TypingText component
 
-function Home  ()  {
+const Home = () => {
+  // Carousel settings
+  const settings = {
+    dots: true, // Show dots for navigation
+    infinite: true, // Infinite loop
+    speed: 600, // Transition speed
+    slidesToShow: 1, // Number of slides to show at once
+    slidesToScroll: 1, // Number of slides to scroll
+    autoplay: true, // Auto-play the carousel
+    autoplaySpeed: 3000, // Auto-play speed in milliseconds
+    arrows: false, // Hide navigation arrows
+  };
+
   return (
     <div className="container mt-5">
+      {/* Carousel Section */}
+      <div style={{ position: "relative" }}>
+        <Slider {...settings} className="mb-5">
+          {/* Slide 1 */}
+          <div>
+            <img
+              src="\src\assets\greg-pappas-rUc9hVE-L-E-unsplash.jpg"
+              alt="Slide 1"
+              className="carousel-image" // Add a class for custom CSS
+            />
+          </div>
+
+          {/* Slide 2 */}
+          <div>
+            <img
+              src="\src\assets\fernando-cferdophotography-6x2iKGi6SPU-unsplash.jpg"
+              alt="Slide 2"
+              className="carousel-image" // Add a class for custom CSS
+            />
+          </div>
+
+          {/* Slide 3 */}
+          <div>
+            <img
+              src="/src/assets/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg"
+              alt="Slide 3"
+              className="carousel-image" // Add a class for custom CSS
+            />
+          </div>
+
+          {/* Slide 4 */}
+          <div>
+            <img
+              src="\src\assets\pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg"
+              alt="Slide 4"
+              className="carousel-image" // Add a class for custom CSS
+            />
+          </div>
+
+          {/* Slide 5 */}
+          <div>
+            <img
+              src="\src\assets\lily-banse--YHSwy6uqvk-unsplash.jpg"
+              alt="Slide 5"
+              className="carousel-image" // Add a class for custom CSS
+            />
+          </div>
+
+          {/* Slide 6 */}
+          <div>
+            <img
+              src="\src\assets\anh-nguyen-fdXnVBurIvU-unsplash.jpg"
+              alt="Slide 6"
+              className="carousel-image" // Add a class for custom CSS
+            />
+          </div>
+        </Slider>
+
+        {/* Typing Text Animation */}
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            textAlign: "center",
+            color: "#fff",
+            zIndex: 1,
+          }}
+        >
+          <TypingText />
+        </div>
+      </div>
+
+      {/* Jumbotron Section */}
       <div className="jumbotron text-center">
-        <h1 className="display-4">Welcome to Medlytics </h1>
+        <h1 className="display-4">Welcome to Medlytics</h1>
         <p className="lead">Empowering Health Choices for a Vibrant Life</p>
         <hr className="my-4" />
         <p>Your Trusted Partner in Health and Wellness</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid modi tenetur veritatis perspiciatis suscipit, error deserunt. Nihil autem labore voluptatem soluta placeat exercitationem, enim natus reiciendis ducimus delectus quae error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quibusdam quam? Fugit saepe aperiam ducimus expedita, debitis doloremque optio voluptate quas! Eos debitis magni modi repellat nihil repudiandae incidunt similique. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, labore assumenda! Veritatis molestias ducimus provident harum aperiam voluptate possimus iusto error consectetur quam autem, accusamus perspiciatis explicabo corrupti, in corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorem voluptate neque illum, est quae vitae quisquam nam eveniet explicabo accusantium mollitia. Obcaecati, quod veritatis repudiandae doloremque natus eveniet neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque dicta. Numquam fuga enim, dolor, harum doloribus odio a earum accusantium beatae et, non corporis molestiae porro sed sequi cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae et maiores molestias tempora cum repudiandae qui, architecto reprehenderit minima amet quasi odio nihil hic natus dolor nam fugiat? Facilis, porro.</p> <br></br>
-        <a className="btn btn-primary btn-lg" href="/services" role="button">Learn more</a> 
+        <a className="btn btn-primary btn-lg" href="/services" role="button">
+          Learn more
+        </a>
       </div>
     </div>
   );

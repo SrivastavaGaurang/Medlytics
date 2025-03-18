@@ -1,46 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#2c3e50', padding: '1rem 2rem' }}>
-      <div className="container-fluid">
-        {/* Brand Logo */}
-        <Link className="navbar-brand" to="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ecf0f1' }}>
-          Medlytics
-        </Link>
-
-        {/* Toggle Button for Mobile */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+    <nav className="navbar">
+      <div className="navbar-container">
+        {/* Logo */}
+        <Link className="navbar-brand" to="/">Medlytics</Link>
 
         {/* Navbar Links */}
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto" style={{ gap: '1.5rem' }}>
-            {/* Home */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/" style={{ color: '#ecf0f1', fontSize: '1.1rem', fontWeight: '500' }}>
-                Home
-              </Link>
-            </li>
+        <ul className="navbar-menu">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
 
-            {/* About Us */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/about" style={{ color: '#ecf0f1', fontSize: '1.1rem', fontWeight: '500' }}>
-                About Us
-              </Link>
-            </li>
-
-            {/* Services Dropdown */}
+                  {/* Services Dropdown */}
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
@@ -48,54 +22,41 @@ const Navbar = () => {
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
-                style={{ color: '#ecf0f1', fontSize: '1.1rem', fontWeight: '500' }}
               >
                 Services
               </Link>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{ backgroundColor: '#2c3e50' }}>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <Link className="dropdown-item" to="/lab-test" style={{ color: '#ecf0f1' }}>
+                  <Link className="dropdown-item" to="/sleep-disorder" >
                     Sleep Disorder
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/health-check" style={{ color: '#ecf0f1' }}>
+                  <Link className="dropdown-item" to="/anxiety-prediction" >
                     Aniexty prediction
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/heart-health" style={{ color: '#ecf0f1' }}>
+                  <Link className="dropdown-item" to="/depression-prediction" >
                     Depression prediction
                   </Link>
-                  <Link className="dropdown-item" to="/heart-health" style={{ color: '#ecf0f1' }}>
+                  <Link className="dropdown-item" to="/nutritional-prediction" >
                     Nutritional prediction
                   </Link>
                 </li>
               </ul>
             </li>
+          
 
-            {/* Doctors */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/doctors" style={{ color: '#ecf0f1', fontSize: '1.1rem', fontWeight: '500' }}>
-                Doctors
-              </Link>
-            </li>
+          <li><Link to="/doctors">Doctors</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/contact"><button className="btn-outline">Contact Us</button></Link></li>
+        </ul>
 
-            {/* Blog */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/blog" style={{ color: '#ecf0f1', fontSize: '1.1rem', fontWeight: '500' }}>
-                Blog
-              </Link>
-            </li>
-
-            {/* Contact Us */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact" style={{ color: '#ecf0f1', fontSize: '1.1rem', fontWeight: '500' }}>
-                <button type="button" className="btn btn-outline-info">Contact Us</button>
-              </Link>
-            </li>
-          </ul>
+        {/* Login & Sign Up Buttons */}
+        <div className="auth-buttons">
+          <Link to="/login" className="btn login">Login</Link>
+          <Link to="/signup" className="btn signup">Sign Up</Link>
         </div>
       </div>
     </nav>
