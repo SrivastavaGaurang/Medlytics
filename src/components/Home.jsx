@@ -25,7 +25,7 @@ const Home = () => {
           {/* Slide 1 */}
           <div>
             <img
-              src="\src\assets\greg-pappas-rUc9hVE-L-E-unsplash.jpg"
+              src="capstone\future-med-analytics\src\assets\sleep.jpg"
               alt="Slide 1"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -34,7 +34,7 @@ const Home = () => {
           {/* Slide 2 */}
           <div>
             <img
-              src="\src\assets\fernando-cferdophotography-6x2iKGi6SPU-unsplash.jpg"
+              src="capstone\future-med-analytics\src\assets\Doctor.jpg"
               alt="Slide 2"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -43,7 +43,7 @@ const Home = () => {
           {/* Slide 3 */}
           <div>
             <img
-              src="/src/assets/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg"
+              src="capstone\future-med-analytics\src\assets\nutration.jpg"
               alt="Slide 3"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -52,7 +52,7 @@ const Home = () => {
           {/* Slide 4 */}
           <div>
             <img
-              src="\src\assets\pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg"
+              src="capstone\future-med-analytics\src\assets\food2.jpg"
               alt="Slide 4"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -61,7 +61,7 @@ const Home = () => {
           {/* Slide 5 */}
           <div>
             <img
-              src="\src\assets\lily-banse--YHSwy6uqvk-unsplash.jpg"
+              src="capstone\future-med-analytics\src\assets\food.jpg"
               alt="Slide 5"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -70,7 +70,7 @@ const Home = () => {
           {/* Slide 6 */}
           <div>
             <img
-              src="\src\assets\anh-nguyen-fdXnVBurIvU-unsplash.jpg"
+              src="\capstone\future-med-analytics\src\assets\stress.jpg"
               alt="Slide 6"
               className="carousel-image" // Add a class for custom CSS
             />
