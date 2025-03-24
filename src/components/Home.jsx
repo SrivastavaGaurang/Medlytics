@@ -18,7 +18,7 @@ const Home = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 ">
       {/* Carousel Section */}
       <div style={{ position: "relative" }}>
         <Slider {...settings} className="mb-5">
