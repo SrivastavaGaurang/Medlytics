@@ -25,7 +25,7 @@ const Home = () => {
           {/* Slide 1 */}
           <div>
             <img
-              src="\src\assets\sleep.jpg"
+              src="../../public/sleep.jpg"
               alt="Slide 1"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -34,7 +34,7 @@ const Home = () => {
           {/* Slide 2 */}
           <div>
             <img
-              src="\src\assets\Doctor.jpg"
+              src="../../public/Doctor.jpg"
               alt="Slide 2"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -43,7 +43,7 @@ const Home = () => {
           {/* Slide 3 */}
           <div>
             <img
-              src="\src\assets\nutration.jpg"
+              src="../../public/nutration.jpg"
               alt="Slide 3"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -52,7 +52,7 @@ const Home = () => {
           {/* Slide 4 */}
           <div>
             <img
-              src="\src\assets\food2.jpg"
+              src="../../public/food2.jpg"
               alt="Slide 4"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -61,7 +61,7 @@ const Home = () => {
           {/* Slide 5 */}
           <div>
             <img
-              src="\src\assets\food.jpg"
+              src="../../public/food.jpg"
               alt="Slide 5"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -70,7 +70,7 @@ const Home = () => {
           {/* Slide 6 */}
           <div>
             <img
-              src="\src\assets\stress.jpg"
+              src="../../public/stress.jpg"
               alt="Slide 6"
               className="carousel-image" // Add a class for custom CSS
             />
