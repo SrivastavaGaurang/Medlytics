@@ -25,7 +25,7 @@ const Home = () => {
           {/* Slide 1 */}
           <div>
             <img
-              src="../../public/sleep.jpg"
+              src="https://res.cloudinary.com/dmilgqv8u/image/upload/v1742818759/sleep_rig5bj.jpg"
               alt="Slide 1"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -34,7 +34,7 @@ const Home = () => {
           {/* Slide 2 */}
           <div>
             <img
-              src="../../public/Doctor.jpg"
+              src="https://res.cloudinary.com/dmilgqv8u/image/upload/v1742818725/Doctor_ixnlix.jpg"
               alt="Slide 2"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -43,7 +43,7 @@ const Home = () => {
           {/* Slide 3 */}
           <div>
             <img
-              src="../../public/nutration.jpg"
+              src="https://res.cloudinary.com/dmilgqv8u/image/upload/v1742818739/nutration_qaszvp.jpg"
               alt="Slide 3"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -52,7 +52,7 @@ const Home = () => {
           {/* Slide 4 */}
           <div>
             <img
-              src="../../public/food2.jpg"
+              src="https://res.cloudinary.com/dmilgqv8u/image/upload/v1742818750/food2_oskiwj.jpg"
               alt="Slide 4"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -61,7 +61,7 @@ const Home = () => {
           {/* Slide 5 */}
           <div>
             <img
-              src="../../public/food.jpg"
+              src="https://res.cloudinary.com/dmilgqv8u/image/upload/v1742818737/food_f8azyx.jpg"
               alt="Slide 5"
               className="carousel-image" // Add a class for custom CSS
             />
@@ -70,7 +70,7 @@ const Home = () => {
           {/* Slide 6 */}
           <div>
             <img
-              src="../../public/stress.jpg"
+              src="https://res.cloudinary.com/dmilgqv8u/image/upload/v1742818754/stress_i1ealz.jpg"
               alt="Slide 6"
               className="carousel-image" // Add a class for custom CSS
             />
